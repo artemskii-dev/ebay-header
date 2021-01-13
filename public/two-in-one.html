@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .border:after {
+            content: '';
+            margin-top: 5px;
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: black;
+            left: 0;
+        }
+
+        .border {
+            margin-bottom: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            background-color: black;
+            padding: 10px 20px
+        }
+
+        .link-to-site {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-decoration-color: white;
+        }
+
+        .about {
+            padding: 20px 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .about__info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            justify-content: space-between;
+        }
+
+        .about__text {
+            margin-top: 10px;
+        }
+
+        .link {
+            color: white;
+            text-decoration: none;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        body > * {
+            font-family: Arial, sans-serif;
+        }
+
+        .header__text {
+            color: white;
+            font-size: 35px;
+        }
+
+        .about__header {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .awards__header {
+            font-size: 35px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+
+        .about__awards {
+            width: 100%;
+            display: inline-grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        @media screen and (max-width: 900px) {
+            .about__awards {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                row-gap: 20px;
+            }
+        }
+
+        @media screen and (max-width: 560px) {
+            .about__awards {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                row-gap: 20px;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            .about {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .about__info {
+                margin: 0;
+            }
+
+            .about__header {
+                margin-top: 15px;
+            }
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+<div class="border">
+    <div class="header">
+        <div class="header__text">Rollun</div>
+        <div class="link-to-site">
+            <a href="http://www.ebaystores.com/Rollun" class="link">Visit my eBay store</a>
+        </div>
+    </div>
+    <div class="about">
+        <div>
+            <a href="https://www.ebay.com/str/Rollun?_trksid=p2047675.l2563">
+                <img src="http://ebay.zaboy.org/images/Google_Site/Ebay_Store/img_store/logo"
+                     alt="rollun logo"></a>
+        </div>
+        <div class="about__info">
+            <div>
+                <div class="about__header">
+                    About us
+                </div>
+                Rollun is a large company, specialized on selling and advertising motorcycle parts, ATV parts and Tires.
+                We have created strong business relationships all over the world and began to gather knowledge and
+                opportunities since 1997. Our success is a combination of a long term experience, latest IT and
+                professional polite and skilled working team. We cherish our buyers and clients and try to do the best
+                in our business. If you have any question about the auction, listings, payment, shipping and return
+                policy, etc. please contact us. We will try to make your shopping easy, comfortable and pleasant.
+            </div>
+            <div class="awards">
+                <div class="awards__header">
+                    Our awards
+                </div>
+
+                <div class="about__awards">
+                    <img src="http://ebay.zaboy.org/images/Google_Site/Ebay_Store/img_store/honor1" alt="honor1">
+                    <img src="http://ebay.zaboy.org/images/Google_Site/Ebay_Store/img_store/honor2" alt="honor2">
+                    <img src="http://ebay.zaboy.org/images/Google_Site/Ebay_Store/img_store/honor3" alt="honor3">
+                    <img src="http://ebay.zaboy.org/images/Google_Site/Ebay_Store/img_store/honor4" alt="honor4">
+                    <img src="http://ebay.zaboy.org/images/Google_Site/Ebay_Store/img_store/honor5" alt="honor5">
+                    <img src="http://ebay.zaboy.org/images/Google_Site/Ebay_Store/img_store/honor6" alt="honor6">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
